@@ -1,0 +1,56 @@
+pseudo code for activity
+
+game idea: A spaceship goes around destroying asteroids within the time limit, make the asteroids collide explodE, explosion sound,we count the collision as a point and  print the point after, then show restart or quit. 
+
+create main class
+create a screen using scene
+create a background using class scene
+load a space image as the background of the scene 
+establish sprite in the scene
+start game
+
+**after creating the scene then create each sprite and their class to controll sprite*
+
+create the supersprite class usership
+create the supersprite class asteroid
+both sprite appear when the user hits play
+
+initiate the class usership 
+load the image of a spaceship 
+set the size to (50, 50) 
+
+create a checkevents methods 
+use K_UP to move += y
+use K_DOWN to move -= y
+use K_LEFT to move -= x
+use K_RIGHT to move += x
+ 
+
+initiate the class asteroid 
+load the image of an asteroid 
+set the size to (50, 50) 
+
+create a checkevents method
+if usership collidesWith(sprite) asteroid, 
+	asteroid gets reset
+	sound effect plays
+	you count it as a score 
+set dx, dy of asteroid  
+set bound action to bounce 
+
+
+create a timer class 
+create a label for the timer 
+set a timeleft method 
+timelefft = 30 seconds 
+countdown until timeleft = 0
+if timeleft = 0 
+
+
+create a game class
+
+
+
+
+
+

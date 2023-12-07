@@ -1,0 +1,62 @@
+Pseudocode
+Initialize the player class, football class, and goal post positions class, main function, instruction class, game class, Menu option class, timerr class, point class
+
+Main function
+game = game(import game class?)
+start the game 
+
+Game class
+initialize scene
+import soccer pitch image as background 
+set the caption to "score a hattrick"
+transform image to screen width 
+initialize the sprites 
+
+player class
+create a fixed player postion(x,y) in the center horizontally, but at the bottom vertically
+
+ball class
+ball postions is right above the player, ball position = player postion (x += 1, y)
+
+goal post positions class
+initialize postion of the goal post, no horizontal(always moving), vertically at the top(x= always moving, y = (get_screenwidth)
+initialize speed at which the goal post move horizontally, just dx = (randomize speed after every reset), randint(-5, 20)
+initialize goal post direction , goal post direction = 1, left= x-1, right = x+1 
+set boundary aroudn the screen, for the post to bounce back and forth on the screen 
+
+Point class
+create a check events method
+if the ball collides with post, the ball resets back to original position
+a cheer sound effect will be played 
+a point will be counted 
+if the ball misses and leaves the screen vertically
+a boo sound effect will be played
+a negative point will be counted 
+if the ball misses and leaves the screen vertically three times
+a sad sound effect will be played 
+a text printed out "you lose, try again"
+give the user an option to restart or quit
+if the ball collides with the post three times without missing 
+a longer cheering effect will be played 
+a text will be printed out "you win, hat trick hero"
+if the ball collides with the post three times without missing under 15 seconds
+a longer cheering effect will be played 
+a text will be printed out "you win, hat trick hero"
+another text will be printed" you just scored a last minute goal to win the game, you've been upgraded from hero status to legend" 
+user will be given option to quit or restart the game
+
+timer class
+timer counts to 40 seconds 
+if timer = 40 
+give the user an option to restart or quit 
+
+
+Menu Option class 
+create a label with pause
+pause will lead to menu option 
+menu option is the option to quit or restart
+you can use click method for the button: pause, quit or restart 
+
+
+
+ 
